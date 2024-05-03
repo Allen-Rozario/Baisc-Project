@@ -1,0 +1,106 @@
+@font-face {
+
+    font-family: 'poppins';
+
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+
+}
+
+*{
+
+    font-family: "poppins" !important;
+
+}
+
+.fa::before, .fa::after{
+
+    font-family: FontAwesome !important ;
+
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.product-list {
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.product-item {
+    width: 21vw;
+    height: 62vh;
+    border: 1px solid lightblue;
+    box-shadow: 0 0  10px 0 lightblue;
+    overflow: hidden;
+    margin-top: 30px
+    
+}
+
+.product-item>img {
+    width: 80%;
+    height: 80%;
+    margin-left: 20px;
+    margin-top: 5px;
+    transition: 1s;
+}
+.product-item:hover{
+box-shadow: 0 0 2px 3px lightblue;
+transform: scale(1.01);
+
+}
+
+.product-item>p {
+    width: 100%;
+    font-size: 12px;
+    margin-left: 7px;
+    margin-top: 3px;
+    font-weight: bold;
+    /* text-overflow: clip;
+        white-space: nowrap; */
+
+}
+ .icon{
+    font-size: 30px;
+ padding-left: 32vw;
+} 
+.icons{
+    font-size: 30px;
+ padding-right: 39vw;
+} 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .product-item {
+        width: 80vw;
+        height: 62vh;
+        border: 1px solid lightblue;
+        box-shadow: 0 0  5px 0;
+        overflow: hidden;
+        margin-top: 30px
+    }
+    .product-item>img {
+        width: 80%;
+        height: 80%;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    /* .title{
+        margin-left: -3vw;
+        justify-content: center;
+    } */
+    /* .title h1{
+        font-size: large;
+        padding-left: 20px;
+    } */
+    .icon{
+        font-size: 30px;
+     padding-left: 15vw;
+    } 
+    .icons{
+        font-size: 30px;
+     padding-right: 15vw;
+    } 
+}
